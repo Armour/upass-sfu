@@ -6,6 +6,8 @@ import json
 from lxml import html, etree
 from typing import Dict, List
 
+IFTTT_URL = 'https://maker.ifttt.com/trigger/{event}/with/key/{key}'
+
 
 class UPass():
     def __init__(self):
@@ -28,6 +30,14 @@ class UPass():
             self._request_upass()
         except AssertionError as e:
             print("Error encountered. {error}".format(error=e))
+            if self._ifttt['event_name'] and self._ifttt['key']:
+                self._send_ifttt_message(status=False)
+    
+    def _send_ifttt_message(self, status):
+        url = IFTTT_URL.format(event=self._ifttt['event_name'], key=self._ifttt['key'])
+        url += '?value1={value1}'.format(value1='succeeded' if status else 'failed')
+        response = requests.get(url)
+        assert (response.status_code == 200)
     
     def _request_upass(self):
         r = requests.Session()
