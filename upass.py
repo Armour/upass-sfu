@@ -20,6 +20,7 @@ class UPass():
                 'username': config_data['username'],
                 'password': config_data['password']
             }
+            # ifttt is optional config
             self._ifttt: Dict[str, str] = {
                 'event_name': config_data.get('ifttt_event', ''),
                 'key': config_data.get('ifttt_key', '')
