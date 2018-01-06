@@ -1,0 +1,7 @@
+// ifttt section is optional
+{
+  "username": "username",
+  "password": "password",
+  "ifttt_event": "event_name",
+  "ifttt_key": "key"
+}
