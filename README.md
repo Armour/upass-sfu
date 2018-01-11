@@ -8,7 +8,6 @@ Create a simple `config.json` file that include your SFU username and password
 
 ifttt config is optional. If provided, it will trigger corresponding ifttt action on **request failed**.
 
-
 ```json
 {
   "username": "username",
@@ -22,12 +21,14 @@ and run `python3 upass.py`
 
 ## Cron job
 
-To make it auto run, you can use `cron job`, I didn't implemented this part, beacause I want to create a desktop app and an iOS app for the automation part.
+To make it auto run, you can use `cron job`,
+a possible crontab config (run on 20th day of each month) is like below:
 
-A possible crontab config (run on 20th day of each month):
 ```cron
 0 0 20 * * /path/to/python3 /path/to/upass.py
 ```
+
+An alternative way is to create a desktop app or an iOS app for the automation part, I'll implement that in the near future.
 
 ## License
 
