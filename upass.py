@@ -5,6 +5,7 @@ import requests
 import json
 from lxml import html, etree
 from typing import Dict, List
+import os
 
 IFTTT_URL = 'https://maker.ifttt.com/trigger/{event}/with/key/{key}'
 
@@ -14,7 +15,7 @@ class UPass():
         self._load_config()
 
     def _load_config(self):
-        with open('config.json') as config:
+        with open(os.path.dirname(os.path.realpath(__file__)) + '/config.json') as config:
             config_data: Dict[str, str] = json.load(config)
             self._sfu_usr_pass: Dict[str, str] = {
                 'username': config_data['username'],
