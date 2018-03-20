@@ -19,7 +19,11 @@ A sample `json` is provided as the following:
 
 In the json file, `ifttt` config is optional. If `ifttt` is provided, the script will trigger corresponding ifttt action on **request failed**.
 
-### 2. Run `python3 upass.py`.
+### 2. Run the following command.
+
+```
+python3 upass.py
+```
 
 The script will then renew your U-Pass.
 
