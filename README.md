@@ -1,12 +1,12 @@
 # UPass-Script
 
-Python script to auto renew monthly UPass for SFU student
+This script helps students in SFU to renew their U-Pass every month.
 
-## Run
+## How To Run
 
-Create a simple `config.json` file that include your SFU username and password
+### 1. Create a simple `config.json` file that contains your SFU username and password.
 
-ifttt config is optional. If provided, it will trigger corresponding ifttt action on **request failed**.
+A sample `json` is provided as the following: 
 
 ```json
 {
@@ -17,19 +17,23 @@ ifttt config is optional. If provided, it will trigger corresponding ifttt actio
 }
 ```
 
-and run `python3 upass.py`
+In the json file, `ifttt` config is optional. If `ifttt` is provided, the script will trigger corresponding ifttt action on **request failed**.
 
-## Cron job
+### 2. Run `python3 upass.py`.
 
-To make it auto run, you can use `cron job`,
-a possible crontab config (run on 20th day of each month) is like below:
+The script will then renew your U-Pass.
+
+## Automation
+
+In Unix like systems, you can use `crontab` to run this script automatically and periodicity.
+The following command is an example of how to setup `crontab` for this script:
 
 ```cron
 0 0 20 * * /path/to/python3 /path/to/upass.py
 ```
 
-An alternative way is to create a desktop app or an iOS app for the automation part, I'll implement that in the near future.
+An alternative way to automatically renew your U-Pass is to create a desktop App or an iOS App, which I may implement in the future.
 
 ## License
 
-MIT
+This script is released under [MIT License](https://opensource.org/licenses/MIT).
