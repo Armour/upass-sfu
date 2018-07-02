@@ -1,4 +1,4 @@
-# UPass-Script
+# upass-sfu
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -42,8 +42,8 @@ An alternative way to automatically renew your U-Pass is to create a desktop App
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/Armour/UPass-Script/blob/master/.github/CONTRIBUTING.md)
+See [CONTRIBUTING.md](https://github.com/Armour/upass-sfu/blob/master/.github/CONTRIBUTING.md)
 
 ## License
 
-[MIT License](https://github.com/Armour/UPass-Script/blob/master/LICENSE)
+[MIT License](https://github.com/Armour/upass-sfu/blob/master/LICENSE)
