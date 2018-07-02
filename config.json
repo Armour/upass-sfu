@@ -1,0 +1,6 @@
+{
+  "username": "username",
+  "password": "password",
+  "ifttt_event": "optional",
+  "ifttt_key": "optional"
+}

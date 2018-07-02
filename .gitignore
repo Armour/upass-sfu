@@ -1,3 +1,8 @@
+# General
+.DS_Store
+*~
+*.swp
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -100,6 +105,8 @@ ENV/
 # mypy
 .mypy_cache/
 
-config.json
-.idea
-.vscode
+# .vscode
+.vscode/
+
+# .idea
+.idea/

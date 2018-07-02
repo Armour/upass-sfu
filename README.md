@@ -1,12 +1,14 @@
 # UPass-Script
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Template from jarvis](https://img.shields.io/badge/Hi-Jarvis-ff69b4.svg)](https://github.com/Armour/Jarvis)
+
 This script helps students in SFU to renew their U-Pass every month.
 
 ## How To Run
 
-### 1. Create a simple `config.json` file that contains your SFU username and password.
-
-A sample `json` is provided as the following: 
+### 1. Use your SFU username and password in `config.json`
 
 ```json
 {
@@ -19,9 +21,9 @@ A sample `json` is provided as the following:
 
 In the json file, `ifttt` config is optional. If `ifttt` is provided, the script will trigger corresponding ifttt action on **request failed**.
 
-### 2. Run the following command.
+### 2. Run the following command
 
-```
+```shell
 python3 upass.py
 ```
 
@@ -38,6 +40,10 @@ The following command is an example of how to setup `crontab` for this script:
 
 An alternative way to automatically renew your U-Pass is to create a desktop App or an iOS App, which I may implement in the future.
 
+## Contributing
+
+See [CONTRIBUTING.md](https://github.com/Armour/UPass-Script/blob/master/.github/CONTRIBUTING.md)
+
 ## License
 
-This script is released under [MIT License](https://opensource.org/licenses/MIT).
+[MIT License](https://github.com/Armour/UPass-Script/blob/master/LICENSE)
