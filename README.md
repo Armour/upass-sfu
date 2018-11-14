@@ -40,7 +40,7 @@ The following command is an example of how to setup `crontab` for this script:
 
 An alternative method to automatically renew your U-Pass is to create a desktop App or an iOS App, which I may implement in the future.
 
-## Contributing
+## Contribution
 
 See [CONTRIBUTING.md](https://github.com/Armour/upass-sfu/blob/master/.github/CONTRIBUTING.md)
 
